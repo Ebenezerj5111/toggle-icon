@@ -1,0 +1,43 @@
+.checkbtn{
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: 25px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    padding: 3px 4px 1px 4px;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:576px) {
+
+    .logo img{
+        margin-bottom: 10px;
+    }
+    .link{
+        height: 300px;
+        width: 100%;
+        background-color: #b5e0ee;
+        position: absolute;
+        top: 106px;
+        flex-direction: column;
+        display: none;
+    }
+    .link li{
+        height: 25%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    .link li:hover{
+        background-color: #220fc569;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked~.link{
+        display: flex;
+    }
+}
